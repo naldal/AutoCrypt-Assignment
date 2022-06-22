@@ -7,23 +7,83 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1416892E8EA3BAC33CF1BFC3 /* Pods_AutoCrypt_Assignment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C449F4F1EB6E3E1278E4B08F /* Pods_AutoCrypt_Assignment.framework */; };
+		DA6082552863457600DD7BCA /* DetailVaccinationCenterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6082542863457600DD7BCA /* DetailVaccinationCenterViewModel.swift */; };
+		DA6082572863492900DD7BCA /* DetailVaccinationCenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6082562863492900DD7BCA /* DetailVaccinationCenterViewController.swift */; };
+		DA608259286351E900DD7BCA /* CenterInformationBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA608258286351E900DD7BCA /* CenterInformationBaseView.swift */; };
+		DA60825B28635A6000DD7BCA /* NaviView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA60825A28635A6000DD7BCA /* NaviView.swift */; };
 		DAA48B692862E02300CA2A95 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA48B682862E02300CA2A95 /* AppDelegate.swift */; };
 		DAA48B6B2862E02300CA2A95 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA48B6A2862E02300CA2A95 /* SceneDelegate.swift */; };
-		DAA48B6D2862E02300CA2A95 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA48B6C2862E02300CA2A95 /* ViewController.swift */; };
-		DAA48B702862E02300CA2A95 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAA48B6E2862E02300CA2A95 /* Main.storyboard */; };
 		DAA48B722862E02300CA2A95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAA48B712862E02300CA2A95 /* Assets.xcassets */; };
 		DAA48B752862E02300CA2A95 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAA48B732862E02300CA2A95 /* LaunchScreen.storyboard */; };
+		DAA48B882862E42900CA2A95 /* SceneCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA48B872862E42900CA2A95 /* SceneCoordinator.swift */; };
+		DAA48B8A2862E68600CA2A95 /* SceneCoordinatorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA48B892862E68600CA2A95 /* SceneCoordinatorType.swift */; };
+		DAA48B8C2862E6A400CA2A95 /* Scene.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA48B8B2862E6A400CA2A95 /* Scene.swift */; };
+		DAA48B8E2862E6C800CA2A95 /* SceneTransitionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA48B8D2862E6C800CA2A95 /* SceneTransitionType.swift */; };
+		DAA48B912862E72300CA2A95 /* ObservableType+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA48B902862E72300CA2A95 /* ObservableType+Extension.swift */; };
+		DAA48B932862E76700CA2A95 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA48B922862E76700CA2A95 /* UIViewController+Extension.swift */; };
+		DAA48B962862E7D100CA2A95 /* ViewModelBindableType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA48B952862E7D100CA2A95 /* ViewModelBindableType.swift */; };
+		DAA48B982862E80C00CA2A95 /* VaccinationCenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA48B972862E80C00CA2A95 /* VaccinationCenterViewController.swift */; };
+		DAA48B9A2862E82800CA2A95 /* VaccinationCenterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA48B992862E82800CA2A95 /* VaccinationCenterViewModel.swift */; };
+		DAA48B9E2862E87100CA2A95 /* MainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA48B9D2862E87100CA2A95 /* MainService.swift */; };
+		DAA48BA02862E89200CA2A95 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA48B9F2862E89200CA2A95 /* NetworkManager.swift */; };
+		DAA48BA22862E8EF00CA2A95 /* JSONSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA48BA12862E8EF00CA2A95 /* JSONSerializer.swift */; };
+		DAA48BA42862E92700CA2A95 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA48BA32862E92700CA2A95 /* Constants.swift */; };
+		DAA48BA72862E99200CA2A95 /* BaseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA48BA62862E99200CA2A95 /* BaseResponse.swift */; };
+		DAA48BAA2862E9CA00CA2A95 /* ApiErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA48BA92862E9CA00CA2A95 /* ApiErrorResponse.swift */; };
+		DAA48BAC2862EA1B00CA2A95 /* AutoCrypt+Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA48BAB2862EA1B00CA2A95 /* AutoCrypt+Error.swift */; };
+		DAA48BAE2862EA5500CA2A95 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA48BAD2862EA5500CA2A95 /* String+Extension.swift */; };
+		DAA48BB02863056300CA2A95 /* UINavigationController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA48BAF2863056300CA2A95 /* UINavigationController+Extension.swift */; };
+		DAA48BB42863093500CA2A95 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA48BB32863093500CA2A95 /* BaseViewController.swift */; };
+		DAA48BB728630B9800CA2A95 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DAA48BB628630B9800CA2A95 /* Localizable.strings */; };
+		DAA48BBA28630CAE00CA2A95 /* VaccinationCenterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA48BB928630CAE00CA2A95 /* VaccinationCenterCell.swift */; };
+		DAA48BBC28630D7800CA2A95 /* FetchVaccinationCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA48BBB28630D7800CA2A95 /* FetchVaccinationCenter.swift */; };
+		DAA48BBE28632EDD00CA2A95 /* EnumType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA48BBD28632EDD00CA2A95 /* EnumType.swift */; };
+		DAA48BC02863308200CA2A95 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA48BBF2863308200CA2A95 /* UIColor+Extension.swift */; };
+		DAA48BC22863310300CA2A95 /* UILabel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA48BC12863310300CA2A95 /* UILabel+Extension.swift */; };
+		DAA48BC42863313400CA2A95 /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA48BC32863313400CA2A95 /* UIFont+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		64DB285371AE8511C7FD83EB /* Pods-AutoCrypt-Assignment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoCrypt-Assignment.release.xcconfig"; path = "Target Support Files/Pods-AutoCrypt-Assignment/Pods-AutoCrypt-Assignment.release.xcconfig"; sourceTree = "<group>"; };
+		6923E43A7FA780F4BA78BF34 /* Pods-AutoCrypt-Assignment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoCrypt-Assignment.debug.xcconfig"; path = "Target Support Files/Pods-AutoCrypt-Assignment/Pods-AutoCrypt-Assignment.debug.xcconfig"; sourceTree = "<group>"; };
+		C449F4F1EB6E3E1278E4B08F /* Pods_AutoCrypt_Assignment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AutoCrypt_Assignment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA6082542863457600DD7BCA /* DetailVaccinationCenterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVaccinationCenterViewModel.swift; sourceTree = "<group>"; };
+		DA6082562863492900DD7BCA /* DetailVaccinationCenterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVaccinationCenterViewController.swift; sourceTree = "<group>"; };
+		DA608258286351E900DD7BCA /* CenterInformationBaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterInformationBaseView.swift; sourceTree = "<group>"; };
+		DA60825A28635A6000DD7BCA /* NaviView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaviView.swift; sourceTree = "<group>"; };
 		DAA48B652862E02300CA2A95 /* AutoCrypt-Assignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AutoCrypt-Assignment.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAA48B682862E02300CA2A95 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DAA48B6A2862E02300CA2A95 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DAA48B6C2862E02300CA2A95 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		DAA48B6F2862E02300CA2A95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DAA48B712862E02300CA2A95 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DAA48B742862E02300CA2A95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DAA48B762862E02300CA2A95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAA48B872862E42900CA2A95 /* SceneCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneCoordinator.swift; sourceTree = "<group>"; };
+		DAA48B892862E68600CA2A95 /* SceneCoordinatorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneCoordinatorType.swift; sourceTree = "<group>"; };
+		DAA48B8B2862E6A400CA2A95 /* Scene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scene.swift; sourceTree = "<group>"; };
+		DAA48B8D2862E6C800CA2A95 /* SceneTransitionType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneTransitionType.swift; sourceTree = "<group>"; };
+		DAA48B902862E72300CA2A95 /* ObservableType+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ObservableType+Extension.swift"; sourceTree = "<group>"; };
+		DAA48B922862E76700CA2A95 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		DAA48B952862E7D100CA2A95 /* ViewModelBindableType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelBindableType.swift; sourceTree = "<group>"; };
+		DAA48B972862E80C00CA2A95 /* VaccinationCenterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaccinationCenterViewController.swift; sourceTree = "<group>"; };
+		DAA48B992862E82800CA2A95 /* VaccinationCenterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaccinationCenterViewModel.swift; sourceTree = "<group>"; };
+		DAA48B9D2862E87100CA2A95 /* MainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainService.swift; sourceTree = "<group>"; };
+		DAA48B9F2862E89200CA2A95 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		DAA48BA12862E8EF00CA2A95 /* JSONSerializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONSerializer.swift; sourceTree = "<group>"; };
+		DAA48BA32862E92700CA2A95 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		DAA48BA62862E99200CA2A95 /* BaseResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseResponse.swift; sourceTree = "<group>"; };
+		DAA48BA92862E9CA00CA2A95 /* ApiErrorResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiErrorResponse.swift; sourceTree = "<group>"; };
+		DAA48BAB2862EA1B00CA2A95 /* AutoCrypt+Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AutoCrypt+Error.swift"; sourceTree = "<group>"; };
+		DAA48BAD2862EA5500CA2A95 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		DAA48BAF2863056300CA2A95 /* UINavigationController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Extension.swift"; sourceTree = "<group>"; };
+		DAA48BB32863093500CA2A95 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		DAA48BB628630B9800CA2A95 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		DAA48BB928630CAE00CA2A95 /* VaccinationCenterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaccinationCenterCell.swift; sourceTree = "<group>"; };
+		DAA48BBB28630D7800CA2A95 /* FetchVaccinationCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchVaccinationCenter.swift; sourceTree = "<group>"; };
+		DAA48BBD28632EDD00CA2A95 /* EnumType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumType.swift; sourceTree = "<group>"; };
+		DAA48BBF2863308200CA2A95 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		DAA48BC12863310300CA2A95 /* UILabel+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Extension.swift"; sourceTree = "<group>"; };
+		DAA48BC32863313400CA2A95 /* UIFont+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +91,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1416892E8EA3BAC33CF1BFC3 /* Pods_AutoCrypt_Assignment.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		16DA591A89BBE6F3BE5294F1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C449F4F1EB6E3E1278E4B08F /* Pods_AutoCrypt_Assignment.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4469AD9ECECC7DBB14FC0D12 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6923E43A7FA780F4BA78BF34 /* Pods-AutoCrypt-Assignment.debug.xcconfig */,
+				64DB285371AE8511C7FD83EB /* Pods-AutoCrypt-Assignment.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		DAA48B5C2862E02300CA2A95 = {
 			isa = PBXGroup;
 			children = (
 				DAA48B672862E02300CA2A95 /* AutoCrypt-Assignment */,
 				DAA48B662862E02300CA2A95 /* Products */,
+				4469AD9ECECC7DBB14FC0D12 /* Pods */,
+				16DA591A89BBE6F3BE5294F1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +136,171 @@
 		DAA48B672862E02300CA2A95 /* AutoCrypt-Assignment */ = {
 			isa = PBXGroup;
 			children = (
+				DAA48B802862E2EE00CA2A95 /* AutoCryptService */,
+				DAA48B942862E7C100CA2A95 /* Utils */,
+				DAA48B9B2862E86000CA2A95 /* Network */,
+				DAA48B8F2862E70B00CA2A95 /* Extension */,
+				DAA48B842862E40B00CA2A95 /* Coordinator */,
 				DAA48B682862E02300CA2A95 /* AppDelegate.swift */,
 				DAA48B6A2862E02300CA2A95 /* SceneDelegate.swift */,
-				DAA48B6C2862E02300CA2A95 /* ViewController.swift */,
-				DAA48B6E2862E02300CA2A95 /* Main.storyboard */,
+				DAA48BA32862E92700CA2A95 /* Constants.swift */,
+				DAA48BB628630B9800CA2A95 /* Localizable.strings */,
 				DAA48B712862E02300CA2A95 /* Assets.xcassets */,
 				DAA48B732862E02300CA2A95 /* LaunchScreen.storyboard */,
 				DAA48B762862E02300CA2A95 /* Info.plist */,
 			);
 			path = "AutoCrypt-Assignment";
+			sourceTree = "<group>";
+		};
+		DAA48B802862E2EE00CA2A95 /* AutoCryptService */ = {
+			isa = PBXGroup;
+			children = (
+				DAA48BB1286308DE00CA2A95 /* Main */,
+				DAA48BB22863092C00CA2A95 /* Base */,
+			);
+			path = AutoCryptService;
+			sourceTree = "<group>";
+		};
+		DAA48B812862E2F700CA2A95 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				DAA48B822862E2FD00CA2A95 /* View */,
+				DAA48B972862E80C00CA2A95 /* VaccinationCenterViewController.swift */,
+				DA6082562863492900DD7BCA /* DetailVaccinationCenterViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		DAA48B822862E2FD00CA2A95 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DAA48BB828630CA200CA2A95 /* Cell */,
+				DA608258286351E900DD7BCA /* CenterInformationBaseView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DAA48B832862E30200CA2A95 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				DAA48B992862E82800CA2A95 /* VaccinationCenterViewModel.swift */,
+				DA6082542863457600DD7BCA /* DetailVaccinationCenterViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		DAA48B842862E40B00CA2A95 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				DAA48B852862E41300CA2A95 /* Scene */,
+				DAA48B872862E42900CA2A95 /* SceneCoordinator.swift */,
+				DAA48B892862E68600CA2A95 /* SceneCoordinatorType.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		DAA48B852862E41300CA2A95 /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				DAA48B8B2862E6A400CA2A95 /* Scene.swift */,
+				DAA48B8D2862E6C800CA2A95 /* SceneTransitionType.swift */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		DAA48B8F2862E70B00CA2A95 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				DAA48B902862E72300CA2A95 /* ObservableType+Extension.swift */,
+				DAA48B922862E76700CA2A95 /* UIViewController+Extension.swift */,
+				DAA48BAD2862EA5500CA2A95 /* String+Extension.swift */,
+				DAA48BAF2863056300CA2A95 /* UINavigationController+Extension.swift */,
+				DAA48BBF2863308200CA2A95 /* UIColor+Extension.swift */,
+				DAA48BC12863310300CA2A95 /* UILabel+Extension.swift */,
+				DAA48BC32863313400CA2A95 /* UIFont+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		DAA48B942862E7C100CA2A95 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				DAA48B952862E7D100CA2A95 /* ViewModelBindableType.swift */,
+				DAA48BA12862E8EF00CA2A95 /* JSONSerializer.swift */,
+				DAA48BBD28632EDD00CA2A95 /* EnumType.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		DAA48B9B2862E86000CA2A95 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				DAA48BA82862E9B800CA2A95 /* NetworkUtils */,
+				DAA48BA52862E98400CA2A95 /* API_Codable */,
+				DAA48B9C2862E86800CA2A95 /* Service */,
+				DAA48B9F2862E89200CA2A95 /* NetworkManager.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		DAA48B9C2862E86800CA2A95 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				DAA48B9D2862E87100CA2A95 /* MainService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		DAA48BA52862E98400CA2A95 /* API_Codable */ = {
+			isa = PBXGroup;
+			children = (
+				DAA48BA62862E99200CA2A95 /* BaseResponse.swift */,
+				DAA48BBB28630D7800CA2A95 /* FetchVaccinationCenter.swift */,
+			);
+			path = API_Codable;
+			sourceTree = "<group>";
+		};
+		DAA48BA82862E9B800CA2A95 /* NetworkUtils */ = {
+			isa = PBXGroup;
+			children = (
+				DAA48BA92862E9CA00CA2A95 /* ApiErrorResponse.swift */,
+				DAA48BAB2862EA1B00CA2A95 /* AutoCrypt+Error.swift */,
+			);
+			path = NetworkUtils;
+			sourceTree = "<group>";
+		};
+		DAA48BB1286308DE00CA2A95 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				DAA48B812862E2F700CA2A95 /* ViewController */,
+				DAA48B832862E30200CA2A95 /* ViewModel */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		DAA48BB22863092C00CA2A95 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				DAA48BB52863093C00CA2A95 /* ViewController */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		DAA48BB52863093C00CA2A95 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				DAA48BB32863093500CA2A95 /* BaseViewController.swift */,
+				DA60825A28635A6000DD7BCA /* NaviView.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		DAA48BB828630CA200CA2A95 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				DAA48BB928630CAE00CA2A95 /* VaccinationCenterCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +310,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DAA48B792862E02300CA2A95 /* Build configuration list for PBXNativeTarget "AutoCrypt-Assignment" */;
 			buildPhases = (
+				371C6A2A701594CD8D7DDBCF /* [CP] Check Pods Manifest.lock */,
 				DAA48B612862E02300CA2A95 /* Sources */,
 				DAA48B622862E02300CA2A95 /* Frameworks */,
 				DAA48B632862E02300CA2A95 /* Resources */,
+				319B7CCD34C044D7D569BAE2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,35 +364,97 @@
 			buildActionMask = 2147483647;
 			files = (
 				DAA48B752862E02300CA2A95 /* LaunchScreen.storyboard in Resources */,
+				DAA48BB728630B9800CA2A95 /* Localizable.strings in Resources */,
 				DAA48B722862E02300CA2A95 /* Assets.xcassets in Resources */,
-				DAA48B702862E02300CA2A95 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		319B7CCD34C044D7D569BAE2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AutoCrypt-Assignment/Pods-AutoCrypt-Assignment-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AutoCrypt-Assignment/Pods-AutoCrypt-Assignment-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AutoCrypt-Assignment/Pods-AutoCrypt-Assignment-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		371C6A2A701594CD8D7DDBCF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AutoCrypt-Assignment-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DAA48B612862E02300CA2A95 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DAA48B6D2862E02300CA2A95 /* ViewController.swift in Sources */,
+				DAA48B932862E76700CA2A95 /* UIViewController+Extension.swift in Sources */,
+				DAA48BAC2862EA1B00CA2A95 /* AutoCrypt+Error.swift in Sources */,
+				DAA48B982862E80C00CA2A95 /* VaccinationCenterViewController.swift in Sources */,
+				DA608259286351E900DD7BCA /* CenterInformationBaseView.swift in Sources */,
+				DAA48B912862E72300CA2A95 /* ObservableType+Extension.swift in Sources */,
+				DAA48B8E2862E6C800CA2A95 /* SceneTransitionType.swift in Sources */,
 				DAA48B692862E02300CA2A95 /* AppDelegate.swift in Sources */,
+				DAA48BC42863313400CA2A95 /* UIFont+Extension.swift in Sources */,
+				DAA48B962862E7D100CA2A95 /* ViewModelBindableType.swift in Sources */,
+				DAA48BB02863056300CA2A95 /* UINavigationController+Extension.swift in Sources */,
+				DA60825B28635A6000DD7BCA /* NaviView.swift in Sources */,
+				DAA48BBE28632EDD00CA2A95 /* EnumType.swift in Sources */,
+				DAA48BC02863308200CA2A95 /* UIColor+Extension.swift in Sources */,
+				DAA48BAE2862EA5500CA2A95 /* String+Extension.swift in Sources */,
+				DAA48BA42862E92700CA2A95 /* Constants.swift in Sources */,
+				DAA48BAA2862E9CA00CA2A95 /* ApiErrorResponse.swift in Sources */,
+				DAA48BA72862E99200CA2A95 /* BaseResponse.swift in Sources */,
+				DAA48BBA28630CAE00CA2A95 /* VaccinationCenterCell.swift in Sources */,
+				DAA48B8C2862E6A400CA2A95 /* Scene.swift in Sources */,
+				DAA48B8A2862E68600CA2A95 /* SceneCoordinatorType.swift in Sources */,
 				DAA48B6B2862E02300CA2A95 /* SceneDelegate.swift in Sources */,
+				DAA48BA22862E8EF00CA2A95 /* JSONSerializer.swift in Sources */,
+				DA6082572863492900DD7BCA /* DetailVaccinationCenterViewController.swift in Sources */,
+				DAA48BBC28630D7800CA2A95 /* FetchVaccinationCenter.swift in Sources */,
+				DAA48BA02862E89200CA2A95 /* NetworkManager.swift in Sources */,
+				DAA48B882862E42900CA2A95 /* SceneCoordinator.swift in Sources */,
+				DAA48BB42863093500CA2A95 /* BaseViewController.swift in Sources */,
+				DA6082552863457600DD7BCA /* DetailVaccinationCenterViewModel.swift in Sources */,
+				DAA48B9A2862E82800CA2A95 /* VaccinationCenterViewModel.swift in Sources */,
+				DAA48BC22863310300CA2A95 /* UILabel+Extension.swift in Sources */,
+				DAA48B9E2862E87100CA2A95 /* MainService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		DAA48B6E2862E02300CA2A95 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DAA48B6F2862E02300CA2A95 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		DAA48B732862E02300CA2A95 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -282,6 +582,7 @@
 		};
 		DAA48B7A2862E02300CA2A95 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6923E43A7FA780F4BA78BF34 /* Pods-AutoCrypt-Assignment.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -292,7 +593,7 @@
 				INFOPLIST_FILE = "AutoCrypt-Assignment/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -304,12 +605,13 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		DAA48B7B2862E02300CA2A95 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 64DB285371AE8511C7FD83EB /* Pods-AutoCrypt-Assignment.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -320,7 +622,7 @@
 				INFOPLIST_FILE = "AutoCrypt-Assignment/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -332,7 +634,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

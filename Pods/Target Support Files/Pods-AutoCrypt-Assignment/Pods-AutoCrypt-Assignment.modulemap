@@ -1,0 +1,6 @@
+framework module Pods_AutoCrypt_Assignment {
+  umbrella header "Pods-AutoCrypt-Assignment-umbrella.h"
+
+  export *
+  module * { export * }
+}
