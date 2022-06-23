@@ -7,6 +7,7 @@ def libraries_rx
   pod 'RxGesture', '~> 3.0.2'
   pod 'Action', '~> 4.2.0'
   pod 'RxDataSources', '~> 4.0.1'
+  pod 'RxCoreLocation', '~> 1.4.0'
 end
 
 def libraries_network

@@ -8,9 +8,7 @@
 import SnapKit
 import UIKit
 
-final class VaccinationCenterCell: UITableViewCell, ViewModelBindableType {
-    
-    var viewModel: VaccinationCenterViewModel!
+final class VaccinationCenterCell: UITableViewCell {
     
     // MARK: - Components
 
@@ -143,7 +141,8 @@ final class VaccinationCenterCell: UITableViewCell, ViewModelBindableType {
         self.updateTimeLabel.text = text
     }
     
-    // init
+    
+    // MARK: - Init
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -161,13 +160,6 @@ final class VaccinationCenterCell: UITableViewCell, ViewModelBindableType {
         self.configureLayout()
         self.setConstraint()
     }
-    
-    // MARK: - Private
-    
-    private let basicInset = 20
-    private let distanceBetweenStaticTexts = 5
-    private let distanceBetweenStaticTextAndData = 10
-    private let staticTextWidth = 100
     
     
     // MARK: - Layout
@@ -196,48 +188,48 @@ final class VaccinationCenterCell: UITableViewCell, ViewModelBindableType {
         }
         
         staticTextCenterNameLabel.snp.makeConstraints { make in
-            make.top.leading.equalToSuperview().inset(basicInset)
-            make.width.equalTo(staticTextWidth)
+            make.top.leading.equalToSuperview().inset(20)
+            make.width.equalTo(100)
         }
         
         centerNameLabel.snp.makeConstraints { make in
-            make.leading.equalTo(staticTextCenterNameLabel.snp.trailing).offset(distanceBetweenStaticTextAndData)
+            make.leading.equalTo(staticTextCenterNameLabel.snp.trailing).offset(10)
             make.centerY.equalTo(staticTextCenterNameLabel)
         }
         
         staticTextFacilityNameLabel.snp.makeConstraints { make in
-            make.top.equalTo(staticTextCenterNameLabel.snp.bottom).offset(distanceBetweenStaticTexts)
-            make.leading.equalToSuperview().offset(basicInset)
-            make.width.equalTo(staticTextWidth)
+            make.top.equalTo(staticTextCenterNameLabel.snp.bottom).offset(5)
+            make.leading.equalToSuperview().offset(20)
+            make.width.equalTo(100)
         }
         
         facilityNameLabel.snp.makeConstraints { make in
             make.leading.equalTo(staticTextFacilityNameLabel.snp.trailing)
-                .offset(distanceBetweenStaticTextAndData)
+                .offset(10)
             make.centerY.equalTo(staticTextFacilityNameLabel)
         }
         
         staticTextAddressLabel.snp.makeConstraints { make in
-            make.top.equalTo(staticTextFacilityNameLabel.snp.bottom).offset(distanceBetweenStaticTexts)
-            make.leading.equalToSuperview().offset(basicInset)
-            make.width.equalTo(staticTextWidth)
+            make.top.equalTo(staticTextFacilityNameLabel.snp.bottom).offset(5)
+            make.leading.equalToSuperview().offset(20)
+            make.width.equalTo(100)
         }
         
         addressLabel.snp.makeConstraints { make in
             make.leading.equalTo(staticTextAddressLabel.snp.trailing)
-                .offset(distanceBetweenStaticTextAndData)
+                .offset(10)
             make.centerY.equalTo(staticTextAddressLabel)
         }
         
         staticTextUpdateTimeLabel.snp.makeConstraints { make in
-            make.top.equalTo(staticTextAddressLabel.snp.bottom).offset(distanceBetweenStaticTexts)
-            make.leading.equalToSuperview().offset(basicInset)
-            make.width.equalTo(staticTextWidth)
+            make.top.equalTo(staticTextAddressLabel.snp.bottom).offset(5)
+            make.leading.equalToSuperview().offset(20)
+            make.width.equalTo(100)
         }
         
         updateTimeLabel.snp.makeConstraints { make in
             make.leading.equalTo(staticTextUpdateTimeLabel.snp.trailing)
-                .offset(distanceBetweenStaticTextAndData)
+                .offset(10)
             make.centerY.equalTo(staticTextUpdateTimeLabel)
         }
         
@@ -253,25 +245,5 @@ final class VaccinationCenterCell: UITableViewCell, ViewModelBindableType {
         setTextOnAddress(address: model.address)
         setTextOnUpdateTime(updateTime: model.updatedAt)
     }
-    
-    
-    // MARK: - Bind
-    
-    func bindViewModel() {
-     
-        
-        let _ = viewModel.input
-        let _ = viewModel.output
-        
-        
-        // MARK: input
-        
-        
-        // MARK: output
-        
-        
-        
-    }
-    
     
 }

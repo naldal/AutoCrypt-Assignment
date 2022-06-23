@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F89B38316D230D1203A8D32D1B96365C"
-               BuildableName = "Action.framework"
-               BlueprintName = "Action"
+               BlueprintIdentifier = "6905592AB0E768D57072E784305481BA"
+               BuildableName = "RxCoreLocation.framework"
+               BlueprintName = "RxCoreLocation"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

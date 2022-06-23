@@ -100,7 +100,7 @@ class VaccinationCenterViewModel: VaccinationCenterViewModelInput,
                     guard let response = response else {
                         return .error(AutoCryptError.NetworkError.ERROR_Server_Condition)
                     }
-                    // Observable을 BehaviorRelay로 변환 후 subscribe
+                    // Observable을 BehaviorRelay에 value bind
                     self.vaccinationCenters.accept(response.data)
                     return .empty()
                 case .failure(let error):

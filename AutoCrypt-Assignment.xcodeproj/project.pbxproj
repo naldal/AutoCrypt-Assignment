@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1416892E8EA3BAC33CF1BFC3 /* Pods_AutoCrypt_Assignment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C449F4F1EB6E3E1278E4B08F /* Pods_AutoCrypt_Assignment.framework */; };
+		8BB22B1DC490428AB57C11AD /* Pods_AutoCrypt_Assignment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E65BC91269B3398FE7631F4 /* Pods_AutoCrypt_Assignment.framework */; };
 		DA6082552863457600DD7BCA /* DetailVaccinationCenterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6082542863457600DD7BCA /* DetailVaccinationCenterViewModel.swift */; };
 		DA6082572863492900DD7BCA /* DetailVaccinationCenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6082562863492900DD7BCA /* DetailVaccinationCenterViewController.swift */; };
 		DA608259286351E900DD7BCA /* CenterInformationBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA608258286351E900DD7BCA /* CenterInformationBaseView.swift */; };
@@ -47,9 +47,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		64DB285371AE8511C7FD83EB /* Pods-AutoCrypt-Assignment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoCrypt-Assignment.release.xcconfig"; path = "Target Support Files/Pods-AutoCrypt-Assignment/Pods-AutoCrypt-Assignment.release.xcconfig"; sourceTree = "<group>"; };
-		6923E43A7FA780F4BA78BF34 /* Pods-AutoCrypt-Assignment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoCrypt-Assignment.debug.xcconfig"; path = "Target Support Files/Pods-AutoCrypt-Assignment/Pods-AutoCrypt-Assignment.debug.xcconfig"; sourceTree = "<group>"; };
-		C449F4F1EB6E3E1278E4B08F /* Pods_AutoCrypt_Assignment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AutoCrypt_Assignment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		20C3AADA7CCC27186EFAA9CF /* Pods-AutoCrypt-Assignment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoCrypt-Assignment.release.xcconfig"; path = "Target Support Files/Pods-AutoCrypt-Assignment/Pods-AutoCrypt-Assignment.release.xcconfig"; sourceTree = "<group>"; };
+		5E65BC91269B3398FE7631F4 /* Pods_AutoCrypt_Assignment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AutoCrypt_Assignment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		956211973C1E99E6BA5EFC63 /* Pods-AutoCrypt-Assignment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoCrypt-Assignment.debug.xcconfig"; path = "Target Support Files/Pods-AutoCrypt-Assignment/Pods-AutoCrypt-Assignment.debug.xcconfig"; sourceTree = "<group>"; };
 		DA6082542863457600DD7BCA /* DetailVaccinationCenterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVaccinationCenterViewModel.swift; sourceTree = "<group>"; };
 		DA6082562863492900DD7BCA /* DetailVaccinationCenterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVaccinationCenterViewController.swift; sourceTree = "<group>"; };
 		DA608258286351E900DD7BCA /* CenterInformationBaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterInformationBaseView.swift; sourceTree = "<group>"; };
@@ -95,17 +95,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1416892E8EA3BAC33CF1BFC3 /* Pods_AutoCrypt_Assignment.framework in Frameworks */,
+				8BB22B1DC490428AB57C11AD /* Pods_AutoCrypt_Assignment.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		16DA591A89BBE6F3BE5294F1 /* Frameworks */ = {
+		32DB0E435E4B87A561D95DDC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C449F4F1EB6E3E1278E4B08F /* Pods_AutoCrypt_Assignment.framework */,
+				5E65BC91269B3398FE7631F4 /* Pods_AutoCrypt_Assignment.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -113,8 +113,8 @@
 		4469AD9ECECC7DBB14FC0D12 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				6923E43A7FA780F4BA78BF34 /* Pods-AutoCrypt-Assignment.debug.xcconfig */,
-				64DB285371AE8511C7FD83EB /* Pods-AutoCrypt-Assignment.release.xcconfig */,
+				956211973C1E99E6BA5EFC63 /* Pods-AutoCrypt-Assignment.debug.xcconfig */,
+				20C3AADA7CCC27186EFAA9CF /* Pods-AutoCrypt-Assignment.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -125,7 +125,7 @@
 				DAA48B672862E02300CA2A95 /* AutoCrypt-Assignment */,
 				DAA48B662862E02300CA2A95 /* Products */,
 				4469AD9ECECC7DBB14FC0D12 /* Pods */,
-				16DA591A89BBE6F3BE5294F1 /* Frameworks */,
+				32DB0E435E4B87A561D95DDC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -316,11 +316,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DAA48B792862E02300CA2A95 /* Build configuration list for PBXNativeTarget "AutoCrypt-Assignment" */;
 			buildPhases = (
-				371C6A2A701594CD8D7DDBCF /* [CP] Check Pods Manifest.lock */,
+				8A5BDBF4172EBE9D06019849 /* [CP] Check Pods Manifest.lock */,
 				DAA48B612862E02300CA2A95 /* Sources */,
 				DAA48B622862E02300CA2A95 /* Frameworks */,
 				DAA48B632862E02300CA2A95 /* Resources */,
-				319B7CCD34C044D7D569BAE2 /* [CP] Embed Pods Frameworks */,
+				01ED1A644C15FF39AAF9E143 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -378,7 +378,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		319B7CCD34C044D7D569BAE2 /* [CP] Embed Pods Frameworks */ = {
+		01ED1A644C15FF39AAF9E143 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -395,7 +395,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AutoCrypt-Assignment/Pods-AutoCrypt-Assignment-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		371C6A2A701594CD8D7DDBCF /* [CP] Check Pods Manifest.lock */ = {
+		8A5BDBF4172EBE9D06019849 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -590,7 +590,7 @@
 		};
 		DAA48B7A2862E02300CA2A95 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6923E43A7FA780F4BA78BF34 /* Pods-AutoCrypt-Assignment.debug.xcconfig */;
+			baseConfigurationReference = 956211973C1E99E6BA5EFC63 /* Pods-AutoCrypt-Assignment.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -619,7 +619,7 @@
 		};
 		DAA48B7B2862E02300CA2A95 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 64DB285371AE8511C7FD83EB /* Pods-AutoCrypt-Assignment.release.xcconfig */;
+			baseConfigurationReference = 20C3AADA7CCC27186EFAA9CF /* Pods-AutoCrypt-Assignment.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

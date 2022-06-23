@@ -68,7 +68,8 @@ class VaccinationCenterViewController: BaseViewController, BaseViewControllerTyp
     // MARK: - Private
     
     private func setTableConfiguration() {
-        self.vaccinationCenterTableView.register(VaccinationCenterCell.self, forCellReuseIdentifier: "VaccinationCenterCell")
+        self.vaccinationCenterTableView.register(VaccinationCenterCell.self,
+                                                 forCellReuseIdentifier: "VaccinationCenterCell")
         self.vaccinationCenterTableView.rowHeight = 120
     }
     
@@ -151,15 +152,11 @@ class VaccinationCenterViewController: BaseViewController, BaseViewControllerTyp
         
         output.resultOfVaccinationCenters
             .observeOn(MainScheduler.asyncInstance)
-            .bind(to: self.vaccinationCenterTableView.rx.items(cellIdentifier: "VaccinationCenterCell",
-                                                               cellType: VaccinationCenterCell.self)) { [weak self] (index, model, cell) in
-                guard let self = self else { return }
-                var cell = cell
+            .bind(to: self.vaccinationCenterTableView.rx
+                .items(cellIdentifier: "VaccinationCenterCell",
+                       cellType: VaccinationCenterCell.self)) { (index, model, cell) in
                 cell.bind(model: model)
-                cell.bind(to: self.viewModel)
-                
-            }
-            .disposed(by: self.disposeBag)
+            }.disposed(by: self.disposeBag)
         
         
         

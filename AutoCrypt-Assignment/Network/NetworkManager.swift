@@ -54,21 +54,17 @@ extension AutoCryptAPI: TargetType {
         }
     }
     
-    public func requestTask(_ request: Any, doPost: Bool = false) -> Task {
+    public func requestTask(_ request: Any) -> Task {
         let requestTojson = JSONSerializer.toJson(request)
         guard let params = requestTojson.jsonStringToDictionary else {
             return .requestPlain
         }
         
-        return doPost ? requestParamWithRequestBody(params: params) : requestParam(params: params)
+        return requestParam(params: params)
     }
     
     public func requestParam(params: [String : Any]) -> Task {
         return .requestParameters(parameters: params, encoding: URLEncoding.default)
-    }
-    
-    public func requestParamWithRequestBody(params: [String: Any]) -> Task {
-        return .requestParameters(parameters: params, encoding: JSONEncoding.default)
     }
     
     public var headers: [String : String]? {
