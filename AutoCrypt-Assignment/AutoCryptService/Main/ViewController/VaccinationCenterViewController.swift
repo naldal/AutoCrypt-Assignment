@@ -57,7 +57,6 @@ class VaccinationCenterViewController: BaseViewController, BaseViewControllerTyp
     
         self.setNaviView(colorType: .black)
         self.setNavigationBackgroundColor(bgColor: .whiteF3)
-        self.naviView.hiddenBackButton(isHidden: true)
         self.naviView.setNaviTitle(title: "VaccinationCenter List".localized)
         
         self.setTableConfiguration()

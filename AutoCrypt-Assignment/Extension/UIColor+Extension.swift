@@ -18,17 +18,7 @@ extension UIColor {
     @nonobjc class var ice: UIColor {
         return UIColor(red: 234.0/255.0, green: 235.0/255.0, blue: 234.0/255.0, alpha: 1.0)
     }
-    
-    /// red: 74.0, green: 234.0, blue: 0.0, alpha: 1.0
-    @nonobjc class var brightLimeGreen: UIColor {
-        return UIColor(red: 74.0/255.0, green: 234.0/255.0, blue: 0.0/255.0, alpha: 1.0)
-    }
-    
-    /// red: 131.0, green: 241.0, blue: 184.0, alpha: 1.0
-    @nonobjc class var lightBlueGreen: UIColor {
-        return UIColor(red: 131.0/255.0, green: 241.0/255.0, blue: 184.0/255.0, alpha: 1.0)
-    }
-    
+
     /// red: 7.0, green: 227.0, blue: 114.0, alpha: 1.0
     @nonobjc class var tealishGreen: UIColor {
         return UIColor(red: 7.0/255.0, green: 227.0/255.0, blue: 114.0/255.0, alpha: 1.0)
@@ -59,14 +49,14 @@ extension UIColor {
         return UIColor(red: 35.0 / 255.0, green: 82.0 / 255.0, blue: 240.0 / 255.0, alpha: 1.0)
     }
     
-    /// red: 255.0, green: 59.0, blue: 0.0, alpha: 1.0
-    @nonobjc class var brightOrange: UIColor {
-        return UIColor(red: 255.0 / 255.0, green: 59.0 / 255.0, blue: 0.0 / 255.0, alpha: 1.0)
+    /// red: 77.0, green: 150.0, blue: 255.0, alpha: 1.0
+    @nonobjc class var pastelBlue: UIColor {
+        return UIColor(red: 77.0 / 255.0, green: 150.0 / 255.0, blue: 255.0 / 255.0, alpha: 1.0)
     }
     
-    /// red: 211.0, green: 212.0, blue: 218.0, alpha: 1.0
-    @nonobjc class var lightBlueGrey: UIColor {
-        return UIColor(red: 211.0 / 255.0, green: 212.0 / 255.0, blue: 218.0 / 255.0, alpha: 1.0)
+    /// red: 255.0, green: 107.0, blue: 107.0, alpha: 1.0
+    @nonobjc class var pastelRed: UIColor {
+        return UIColor(red: 255.0 / 255.0, green: 107.0 / 255.0, blue: 107.0 / 255.0, alpha: 1.0)
     }
     
     /// white: 249.0
@@ -77,16 +67,6 @@ extension UIColor {
     /// white: 243.0
     @nonobjc class var whiteF3: UIColor {
         return UIColor(white: 243.0 / 255.0, alpha: 1.0)
-    }
-    
-    /// black: 0.5
-    @nonobjc class var blackF50: UIColor {
-        return UIColor(red: 0, green: 0, blue: 0, alpha: 0.5)
-    }
-    
-    /// black: 0.1
-    @nonobjc class var blackF10: UIColor {
-        return UIColor(red: 0, green: 0, blue: 0, alpha: 0.1)
     }
     
     /// red: 0.0, green: 0.0, blue: 0.0, alpha: 0.05

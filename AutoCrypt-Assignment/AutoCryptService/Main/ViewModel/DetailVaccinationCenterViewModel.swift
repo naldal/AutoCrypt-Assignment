@@ -5,6 +5,7 @@
 //  Created by 송하민 on 2022/06/22.
 //
 
+import CoreLocation
 import Action
 import RxCocoa
 import RxSwift
@@ -12,10 +13,17 @@ import UIKit
 
 protocol DetailVaccinationCenterViewModelInput {
     
+    /// 뒤로가기 액션
+    var backAction: CocoaAction { get }
+    
+    /// 지도이동 액션
+    var moveToVaccinationCenterMap: CocoaAction { get }
+    
 }
 
 protocol DetailVaccinationCenterViewModelOutput {
     
+    /// 백신센터 정보
     var initializedCenterInformation: Observable<VaccinationCenter> { get }
 }
 
@@ -36,6 +44,19 @@ class DetailVaccinationCenterViewModel: DetailVaccinationCenterViewModelInput,
     
     // MARK: - Input
     
+    lazy var backAction: CocoaAction = {
+        return CocoaAction {
+            return self.sceneCoordinator.pop(animated: true).asObservable()
+        }
+    }()
+    
+    
+    lazy var moveToVaccinationCenterMap: CocoaAction = {
+        return CocoaAction {
+            let viewModel = VaccinationCenterMapViewModel(centerInformation: self.vaccinationCenterInformation)
+            return self.sceneCoordinator.transition(to: Scene.vaccinationCenterMap(viewModel))
+        }
+    }()
     
     
     // MARK: - Output

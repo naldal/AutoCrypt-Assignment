@@ -32,10 +32,8 @@ class Constants {
     // MARK: - Map
     
     struct Map {
-        /// marker zoom value
-        static let MARKER_ZOOM_SCALE: Double = 18.0
-        /// cameraUpdate animationDuration
-        static let CAMERA_UPDATE_ANIMATION_DURATION:TimeInterval = 1.5
+        /// MkMap zoom value
+        static let MAP_ZOOM_SCALE: Double = 800
     }
     
     // MARK: - API

@@ -56,7 +56,7 @@ class BaseViewController: UIViewController, UIGestureRecognizerDelegate {
         
         baseNavigationView.snp.makeConstraints { make in
             make.top.width.equalTo(view)
-            make.height.equalTo(100)
+            make.height.equalTo(95)
         }
         
         self.naviView.snp.makeConstraints { make in

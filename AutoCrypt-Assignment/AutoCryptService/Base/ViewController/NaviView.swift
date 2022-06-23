@@ -12,15 +12,6 @@ import SnapKit
 
 class NavigationView: UIView {
 
-    lazy var backBtn: UIButton = {
-        let button = UIButton()
-        button.setImage(UIImage(named: ""), for: .normal)
-        //test::임의의 백버튼
-        button.setTitle("back", for: .normal)
-        button.backgroundColor = .red
-        return button
-    }()
-    
     private lazy var navTitleLabel: UILabel = {
         let label = UILabel()
         label.setLabelOptions(color: .charcoal,
@@ -51,16 +42,9 @@ class NavigationView: UIView {
         
         self.backgroundColor = .clear
         
-        [backBtn,
-         navTitleLabel,
+        [navTitleLabel,
          borderLineView]
             .forEach(self.addSubview(_:))
-        
-        // navigationbar back button
-        self.backBtn.snp.makeConstraints { make in
-            make.top.leading.bottom.equalToSuperview()
-            make.width.equalTo(56)
-        }
         
         // navigationbar title
         self.navTitleLabel.snp.makeConstraints { make in
@@ -86,9 +70,5 @@ class NavigationView: UIView {
         } else {
             self.navTitleLabel.textColor = .white
         }
-    }
-    
-    func hiddenBackButton(isHidden: Bool) {
-        self.backBtn.isHidden = isHidden
     }
 }

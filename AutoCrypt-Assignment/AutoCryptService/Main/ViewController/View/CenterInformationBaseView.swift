@@ -25,12 +25,14 @@ final class CenterInformationBaseView: UIView, ViewModelBindableType {
         return view
     }()
     
+    /// 대표 이미지
     private lazy var infoGraphicImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.image = UIImage()
         return imageView
     }()
     
+    /// 카테고리 텍스트
     private lazy var staticInformationTitleLabel: UILabel = {
         let label = UILabel()
         label.setLabelOptions(text: "",
@@ -43,6 +45,7 @@ final class CenterInformationBaseView: UIView, ViewModelBindableType {
         return label
     }()
     
+    /// 카테고리 라벨
     private lazy var informationLabel: UILabel = {
         let label = UILabel()
         label.numberOfLines = 2
@@ -85,15 +88,15 @@ final class CenterInformationBaseView: UIView, ViewModelBindableType {
         var title = ""
         switch type {
         case .center:
-            title = "센터명"
+            title = "center_name".localized
         case .facility:
-            title = "건물명"
+            title = "facility_name".localized
         case .call:
-            title = "전화번호"
+            title = "call_number".localized
         case .update:
-            title = "업데이트 시간"
+            title = "update_time".localized
         case .address:
-            title = "주소"
+            title = "address".localized
         }
         self.staticInformationTitleLabel.text = title
     }

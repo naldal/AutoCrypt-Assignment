@@ -24,30 +24,35 @@ class DetailVaccinationCenterViewController: BaseViewController,
         return view
     }()
     
+    /// 센터명 뷰
     private lazy var centerView: CenterInformationBaseView = {
         var view = CenterInformationBaseView(viewType: .center)
         view.bind(to: self.viewModel)
         return view 
     }()
     
+    /// 건물명 뷰
     private lazy var buildingView: CenterInformationBaseView = {
         var view = CenterInformationBaseView(viewType: .facility)
         view.bind(to: self.viewModel)
         return view
     }()
     
+    /// 전화번호 뷰
     private lazy var callView: CenterInformationBaseView = {
         var view = CenterInformationBaseView(viewType: .call)
         view.bind(to: self.viewModel)
         return view
     }()
     
+    /// 업데이트 시간 뷰
     private lazy var updateView: CenterInformationBaseView = {
         var view = CenterInformationBaseView(viewType: .update)
         view.bind(to: self.viewModel)
         return view
     }()
     
+    /// 주소 뷰
     private lazy var addressView: CenterInformationBaseView = {
         var view = CenterInformationBaseView(viewType: .address)
         view.bind(to: self.viewModel)
@@ -67,10 +72,12 @@ class DetailVaccinationCenterViewController: BaseViewController,
         
         self.setNaviView(colorType: .black)
         self.setNavigationBackgroundColor(bgColor: .whiteF3)
-        self.naviView.hiddenBackButton(isHidden: true)
         
-        
-        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "지도",
+        self.navigationItem.leftBarButtonItem =  UIBarButtonItem(title: "",
+                                                                 image: UIImage(systemName: "chevron.backward"),
+                                                                 primaryAction: nil,
+                                                                 menu: nil)
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "map".localized,
                                                                  image: nil,
                                                                  primaryAction: nil,
                                                                  menu: nil)
@@ -113,34 +120,34 @@ class DetailVaccinationCenterViewController: BaseViewController,
         
         centerView.snp.makeConstraints { make in
             make.top.leading.equalToSuperview().inset(20)
-            make.width.equalTo(170)
-            make.height.equalTo(200)
+            make.width.equalTo(150)
+            make.height.equalTo(180)
         }
         
         buildingView.snp.makeConstraints { make in
             make.top.trailing.equalToSuperview().inset(20)
-            make.width.equalTo(170)
-            make.height.equalTo(200)
+            make.width.equalTo(150)
+            make.height.equalTo(180)
         }
         
         callView.snp.makeConstraints { make in
             make.top.equalTo(centerView.snp.bottom).offset(30)
             make.leading.equalToSuperview().inset(20)
-            make.width.equalTo(170)
-            make.height.equalTo(200)
+            make.width.equalTo(150)
+            make.height.equalTo(180)
         }
         
         updateView.snp.makeConstraints { make in
             make.top.equalTo(buildingView.snp.bottom).offset(30)
             make.trailing.equalToSuperview().inset(20)
-            make.width.equalTo(170)
-            make.height.equalTo(200)
+            make.width.equalTo(150)
+            make.height.equalTo(180)
         }
         
         addressView.snp.makeConstraints { make in
             make.leading.trailing.equalToSuperview().inset(20)
             make.centerX.equalToSuperview()
-            make.height.equalTo(170)
+            make.height.equalTo(165)
             make.top.equalTo(updateView.snp.bottom).offset(30)
         }
         
@@ -154,9 +161,16 @@ class DetailVaccinationCenterViewController: BaseViewController,
         
         // MARK: Input
         
+        self.navigationItem.leftBarButtonItem?.rx.tap
+            .subscribe(onNext: { _ in
+                input.backAction.execute()
+            })
+            .disposed(by: self.disposeBag)
+        
+        
         self.navigationItem.rightBarButtonItem?.rx.tap
             .subscribe(onNext: { _ in
-                print("aa")
+                input.moveToVaccinationCenterMap.execute()
             })
             .disposed(by: self.disposeBag)
         

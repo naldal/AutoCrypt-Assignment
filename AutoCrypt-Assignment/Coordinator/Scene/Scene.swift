@@ -19,6 +19,9 @@ enum Scene {
     /// DetailVaccinationCenterViewController
     case detailVaccinationCenter(DetailVaccinationCenterViewModel)
     
+    /// VaccinationCenterMapViewController
+    case vaccinationCenterMap(VaccinationCenterMapViewModel)
+    
 }
 
 extension Scene: TargetScene {
@@ -33,6 +36,11 @@ extension Scene: TargetScene {
        
         case let .detailVaccinationCenter(viewModel):
             var vc = DetailVaccinationCenterViewController()
+            vc.bind(to: viewModel)
+            return .push(vc)
+            
+        case let .vaccinationCenterMap(viewModel):
+            var vc = VaccinationCenterMapViewController()
             vc.bind(to: viewModel)
             return .push(vc)
             

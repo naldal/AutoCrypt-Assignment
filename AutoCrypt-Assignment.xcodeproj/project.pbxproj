@@ -12,6 +12,8 @@
 		DA6082572863492900DD7BCA /* DetailVaccinationCenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6082562863492900DD7BCA /* DetailVaccinationCenterViewController.swift */; };
 		DA608259286351E900DD7BCA /* CenterInformationBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA608258286351E900DD7BCA /* CenterInformationBaseView.swift */; };
 		DA60825B28635A6000DD7BCA /* NaviView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA60825A28635A6000DD7BCA /* NaviView.swift */; };
+		DA7274862864910F00196916 /* VaccinationCenterMapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7274852864910F00196916 /* VaccinationCenterMapViewModel.swift */; };
+		DA7274882864914600196916 /* VaccinationCenterMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7274872864914600196916 /* VaccinationCenterMapViewController.swift */; };
 		DAA48B692862E02300CA2A95 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA48B682862E02300CA2A95 /* AppDelegate.swift */; };
 		DAA48B6B2862E02300CA2A95 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA48B6A2862E02300CA2A95 /* SceneDelegate.swift */; };
 		DAA48B722862E02300CA2A95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAA48B712862E02300CA2A95 /* Assets.xcassets */; };
@@ -52,6 +54,8 @@
 		DA6082562863492900DD7BCA /* DetailVaccinationCenterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVaccinationCenterViewController.swift; sourceTree = "<group>"; };
 		DA608258286351E900DD7BCA /* CenterInformationBaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterInformationBaseView.swift; sourceTree = "<group>"; };
 		DA60825A28635A6000DD7BCA /* NaviView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaviView.swift; sourceTree = "<group>"; };
+		DA7274852864910F00196916 /* VaccinationCenterMapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaccinationCenterMapViewModel.swift; sourceTree = "<group>"; };
+		DA7274872864914600196916 /* VaccinationCenterMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaccinationCenterMapViewController.swift; sourceTree = "<group>"; };
 		DAA48B652862E02300CA2A95 /* AutoCrypt-Assignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AutoCrypt-Assignment.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAA48B682862E02300CA2A95 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DAA48B6A2862E02300CA2A95 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -167,6 +171,7 @@
 				DAA48B822862E2FD00CA2A95 /* View */,
 				DAA48B972862E80C00CA2A95 /* VaccinationCenterViewController.swift */,
 				DA6082562863492900DD7BCA /* DetailVaccinationCenterViewController.swift */,
+				DA7274872864914600196916 /* VaccinationCenterMapViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -185,6 +190,7 @@
 			children = (
 				DAA48B992862E82800CA2A95 /* VaccinationCenterViewModel.swift */,
 				DA6082542863457600DD7BCA /* DetailVaccinationCenterViewModel.swift */,
+				DA7274852864910F00196916 /* VaccinationCenterMapViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -434,6 +440,7 @@
 				DAA48BAE2862EA5500CA2A95 /* String+Extension.swift in Sources */,
 				DAA48BA42862E92700CA2A95 /* Constants.swift in Sources */,
 				DAA48BAA2862E9CA00CA2A95 /* ApiErrorResponse.swift in Sources */,
+				DA7274882864914600196916 /* VaccinationCenterMapViewController.swift in Sources */,
 				DAA48BA72862E99200CA2A95 /* BaseResponse.swift in Sources */,
 				DAA48BBA28630CAE00CA2A95 /* VaccinationCenterCell.swift in Sources */,
 				DAA48B8C2862E6A400CA2A95 /* Scene.swift in Sources */,
@@ -442,6 +449,7 @@
 				DAA48BA22862E8EF00CA2A95 /* JSONSerializer.swift in Sources */,
 				DA6082572863492900DD7BCA /* DetailVaccinationCenterViewController.swift in Sources */,
 				DAA48BBC28630D7800CA2A95 /* FetchVaccinationCenter.swift in Sources */,
+				DA7274862864910F00196916 /* VaccinationCenterMapViewModel.swift in Sources */,
 				DAA48BA02862E89200CA2A95 /* NetworkManager.swift in Sources */,
 				DAA48B882862E42900CA2A95 /* SceneCoordinator.swift in Sources */,
 				DAA48BB42863093500CA2A95 /* BaseViewController.swift in Sources */,
